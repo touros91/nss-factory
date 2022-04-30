@@ -1,3 +1,9 @@
+// color variables
+@import "@/assets/style/partials/variables.scss";
+// mixins
+@import "@/assets/style/partials/mixins.scss";
+
+
 // Google fonts 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lato:wght@400;900&family=Montserrat:wght@300;400;500;600;700;800&display=swap');
 
@@ -12,3 +18,4 @@ body {
     font-family: 'Lato', sans-serif;
     font-family: 'Montserrat', sans-serif;
 }
+
