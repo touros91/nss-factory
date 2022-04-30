@@ -41,9 +41,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "src/assets/style/partials/variables.scss";
+
 .navbar-light .navbar-nav .nav-link.active:hover {
   border-bottom: 1px solid;
-  color: #d0c3b6;
+  color: $color-beige;
 }
 
 .me-auto {
@@ -55,18 +57,24 @@ export default {
 }
 
 nav {
-  // position: fixed;
   top: 0px;
   width: 100%;
+  font-family: "Montserrat";
 }
 
 .navbar {
   padding-top: 0px;
   padding-bottom: 0px;
+  font-family: "Montserrat";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
 
   .container-fluid {
     padding-left: 0px;
-    background: white;
+    background: $color-white;
 
     ul {
       margin-bottom: 0;
@@ -76,9 +84,7 @@ nav {
       justify-content: space-evenly;
 
       li {
-        // min-width: 130px;
         list-style: none;
-        // padding: 23px;
         font-weight: 600;
         cursor: pointer;
 
@@ -99,14 +105,14 @@ nav {
 
     .logo {
       background-color: #d0c4b6;
-      color: white;
+      color: $color-white;
       max-width: 250px;
       font-weight: 700;
       font-size: 25px;
       padding: 24px;
       letter-spacing: 3px;
       text-decoration: none;
-      font-family: "Montserrat-Bold";
+      font-family: $montserrat-bold;
     }
 
     .input-search {

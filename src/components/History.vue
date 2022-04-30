@@ -29,25 +29,24 @@
   </div>
 </template>
 
-<script>
-export default {};
-</script>
-
 <style lang="scss" scoped>
+@import "src/assets/style/partials/variables.scss";
+
 div {
-  font-family: "Miller-Display";
+  font-family: $miller-display;
   padding: 20px 0;
 
   h2 {
-    color: #111111;
+    color: $color-title;
     font-size: 50px;
     margin-bottom: 20px;
   }
 
   p {
-    color: #acacac;
+    color: $color-paragraph;
     font-size: 15px;
     text-align: left;
+    font-family: "Merriweather-Regular";
   }
 
   .left {

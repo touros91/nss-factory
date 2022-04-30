@@ -1,5 +1,5 @@
 <template>
-  <div class="col-xs-12 col-lg-6">
+  <div class="col-xs-12 col-lg-6 mb-5 mb-lg-0">
     <img :src="require(`@/${source}`)" alt="Store" />
   </div>
 </template>
@@ -16,18 +16,10 @@ export default {
 
 
 <style lang="scss" scoped>
-div {
-  padding-right: var(--bs-gutter-x, 1.75rem);
-  padding-left: var(--bs-gutter-x, 1.75rem);
+@import "src/assets/style/partials/variables.scss";
 
-  .col-xs-12 {
-    width: 100%;
-    img {
-      width: 100%;
-    }
-  }
+div {
   .col-lg-6 {
-    width: 50%;
     padding: 0;
     img {
       width: 100%;
