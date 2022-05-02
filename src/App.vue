@@ -1,55 +1,75 @@
 <template>
   <div id="app">
+    <!-- header with navigation bar  -->
     <header>
       <NavBar :navBar="navBar" />
     </header>
+    <!-- main section  -->
     <main>
+      <!-- Hero with carousel  -->
       <section>
         <Hero />
       </section>
-      <section class="container-fluid">
-        <div class="row row-padding">
-          <History />
-        </div>
-      </section>
-      <section class="container-fluid">
-        <div class="row row-padding">
-          <Collection title="Temporary Store" />
-          <ImageComponent source="assets/img/store-snow.png" />
-        </div>
-        <div class="row row-padding">
-          <ImageComponent source="assets/img/store.png" />
-          <Collection title="New Collection Henry London" />
-        </div>
-      </section>
-      <section class="container-fluid mt-5">
-        <div class="row row-padding">
-          <Press />
-          <PressRight />
-        </div>
-      </section>
-      <section class="container-fluid mt-5">
-        <div class="row row-padding">
-          <Elegant source="assets/img/man.jpeg" />
-          <div class="col-xs-12 col-lg-6">
-            <div class="row">
-              <ImageSmall source="assets/img/bus.png" />
-              <ImageSmall source="assets/img/two-watches.png" />
-            </div>
-            <div class="row">
-              <ImageSmall source="assets/img/dark-watch.png" />
-              <ImageSmall source="assets/img/light-watch.png" />
+      <div class="main-container">
+        <section class="container-fluid">
+          <div class="row row-padding">
+            <History />
+          </div>
+        </section>
+        <!-- Temporary Store and New Collection section  -->
+        <section class="container-fluid">
+          <div class="row row-padding">
+            <Collection title="Temporary Store" />
+            <ImageComponent source="assets/img/store-snow.png" />
+          </div>
+          <div class="row row-padding">
+            <ImageComponent source="assets/img/store.png" />
+            <Collection title="New Collection Henry London" />
+          </div>
+        </section>
+        <!-- Press with carousel section  -->
+        <section class="container-fluid mt-5">
+          <div class="row row-padding">
+            <Press />
+            <PressRight />
+          </div>
+        </section>
+        <!-- Instagram and images section  -->
+        <section class="container-fluid mt-5">
+          <div class="row row-padding">
+            <Elegant source="assets/img/man.jpeg" />
+            <div
+              class="col-xs-12 col-lg-6"
+              data-aos="flip-right"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000"
+              data-aos-delay="300"
+            >
+              <div class="row">
+                <ImageSmall source="assets/img/bus.png" />
+                <ImageSmall source="assets/img/two-watches.png" />
+              </div>
+              <div class="row">
+                <ImageSmall source="assets/img/dark-watch.png" />
+                <ImageSmall source="assets/img/light-watch.png" />
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section>
-        <GetInTouch />
-      </section>
+        </section>
+        <!-- Newsletter section  -->
+        <section>
+          <GetInTouch />
+        </section>
+      </div>
+      <!-- History section  -->
     </main>
-    <footer class="footer-bg">
-      <Footer :footerData="footerData" />
-      <Copyright />
+    <!-- footer  -->
+
+    <footer>
+      <div class="main-container row-padding">
+        <Footer :footerData="footerData" class="footer-bg" />
+        <Copyright />
+      </div>
     </footer>
   </div>
 </template>
@@ -125,11 +145,15 @@ export default {
     url(./assets/font/Miller-Display_30501.ttf) format("truetype");
 }
 @font-face {
-  font-family: "Merriweather-Regular";
-  src: local("MontsMerriweathererrat"),
+  font-family: $merriweather;
+  src: local("Merriweathert"),
     url(./assets/font/Merriweather-Regular.ttf) format("truetype");
 }
 
+.main-container {
+  width: 85%;
+  margin: auto;
+}
 .row-padding {
   padding: 0 50px;
 }

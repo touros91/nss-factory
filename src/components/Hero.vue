@@ -89,7 +89,7 @@
 
     h1 {
       font-family: $miller-display;
-      font-size: 70px;
+      font-size: $main-title;
     }
 
     p {

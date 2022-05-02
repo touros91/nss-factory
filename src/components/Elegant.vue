@@ -1,5 +1,11 @@
 <template>
-  <div class="col-xs-12 col-lg-6">
+  <div
+    data-aos="flip-left"
+    data-aos-easing="ease-out-cubic"
+    data-aos-duration="2000"
+    data-aos-delay="300"
+    class="col-xs-12 col-lg-6"
+  >
     <a href="#">
       <div class="image">
         <img
@@ -64,7 +70,7 @@ div {
           font-family: $montserrat-bold;
         }
         h2 {
-          font-size: 50px;
+          font-size: $main-title;
         }
       }
     }

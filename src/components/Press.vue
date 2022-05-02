@@ -1,5 +1,5 @@
 <template>
-  <div class="col-md-12 col-xxl-6">
+  <div class="col-xs-12 col-xxl-6">
     <h2>
       Press from <br />
       Watch Lab Studio
@@ -15,22 +15,22 @@
 <style lang="scss" scoped>
 @import "src/assets/style/partials/variables.scss";
 
-.col-md-12 {
+.col-xs-12 {
   // height: 910px;
   font-family: $miller-display;
   color: #212529;
 
   h2 {
-    font-size: 50px;
     text-align: left;
     padding-bottom: 50px;
+    font-size: $main-title;
   }
 
   p {
     color: $color-paragraph;
     font-size: 15px;
     text-align: left;
-    font-family: "Merriweather-Regular";
+    font-family: $merriweather;
   }
 }
 </style>

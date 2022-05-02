@@ -1,5 +1,9 @@
 <template>
-  <div class="col-xs-12 col-lg-6 mb-5 mb-lg-0">
+  <div
+    data-aos="zoom-in"
+    data-aos-delay="300"
+    class="col-xs-12 col-lg-6 mb-5 mb-lg-0"
+  >
     <img :src="require(`@/${source}`)" alt="Store" />
   </div>
 </template>

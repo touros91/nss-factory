@@ -1,5 +1,7 @@
 import Vue from "vue";
 import App from "./App.vue";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 // Bootstrap //
 import "bootstrap";
@@ -22,4 +24,7 @@ Vue.component("font-awesome-icon", FontAwesomeIcon);
 
 new Vue({
   render: (h) => h(App),
+  mounted() {
+    AOS.init();
+  },
 }).$mount("#app");

@@ -35,22 +35,27 @@
 div {
   font-family: $miller-display;
   padding: 20px 0;
-
   h2 {
     color: $color-title;
-    font-size: 50px;
     margin-bottom: 20px;
+    font-size: $main-title;
   }
 
   p {
     color: $color-paragraph;
     font-size: 15px;
     text-align: left;
-    font-family: "Merriweather-Regular";
+    font-family: $merriweather;
   }
 
   .left {
-    padding-right: 120px;
+    padding-right: 150px;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 992px) {
+  div .left {
+    padding-right: 0px;
   }
 }
 </style>

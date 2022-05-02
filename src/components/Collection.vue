@@ -57,7 +57,7 @@ div {
     text-align: center;
     color: $color-paragraph;
     font-size: 15px;
-    font-family: "Merriweather-Regular";
+    font-family: $merriweather;
   }
 
   button {

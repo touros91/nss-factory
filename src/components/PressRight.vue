@@ -1,10 +1,11 @@
 <template>
-  <div class="col-xs-12 col-lg-6 right d-none d-xxl-block">
+  <div
+    data-aos="zoom-in"
+    data-aos-delay="300"
+    class="col-xs-12 col-lg-6 right d-none d-xxl-block"
+  >
     <div class="row">
       <div class="col-xs-12 col-lg-6 left">
-        <!-- <div class="image">
-          <img src="@/assets/img/watch.png" alt="Handmade watch" />
-        </div> -->
         <div class="image">
           <div
             id="demo"
@@ -16,21 +17,21 @@
                 <img
                   :src="require(`@/assets/img/watch.png`)"
                   class="d-block w-100"
-                  alt="..."
+                  alt="Handmade Watch Laboratory"
                 />
               </div>
               <div class="carousel-item">
                 <img
                   :src="require(`@/assets/img/watch-lab.jpeg`)"
                   class="d-block w-100"
-                  alt="..."
+                  alt="Handmade Watch Laboratory"
                 />
               </div>
               <div class="carousel-item">
                 <img
                   :src="require(`@/assets/img/watch3.webp`)"
                   class="d-block w-100"
-                  alt="..."
+                  alt="Henry London Watch"
                 />
               </div>
             </div>
@@ -68,8 +69,8 @@
   position: relative;
   .image {
     position: absolute;
-    top: 26%;
-    left: -80%;
+    top: 28%;
+    left: -128%;
 
     img {
       width: 100%;
@@ -98,6 +99,7 @@
 
     h3 {
       font-family: $miller-display;
+      text-align: left;
     }
 
     .date {
