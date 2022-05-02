@@ -5,6 +5,7 @@
     data-aos-duration="2000"
     data-aos-delay="300"
     class="col-xs-12 col-lg-6"
+    data-aos-once="true"
   >
     <a href="#">
       <div class="image">

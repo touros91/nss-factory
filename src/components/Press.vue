@@ -24,17 +24,17 @@
     padding-bottom: 50px;
     font-size: $main-title;
   }
-
-  p {
-    color: $color-paragraph;
-    font-size: 15px;
-    text-align: left;
-    font-family: $merriweather;
-    padding-right: 350px;
-  }
 }
 
-@media only screen and (min-width: 0px) and (max-width: 992px) {
+p {
+  color: $color-paragraph;
+  font-size: 15px;
+  text-align: left;
+  font-family: $merriweather;
+  padding-right: 350px;
+}
+
+@media (max-width: 992px) {
   p {
     padding-right: 0;
   }

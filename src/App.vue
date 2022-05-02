@@ -44,6 +44,7 @@
               data-aos-easing="ease-out-cubic"
               data-aos-duration="2000"
               data-aos-delay="300"
+              data-aos-once="true"
             >
               <div class="row">
                 <ImageSmall source="assets/img/bus.png" />
