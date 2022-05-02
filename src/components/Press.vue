@@ -16,7 +16,6 @@
 @import "src/assets/style/partials/variables.scss";
 
 .col-xs-12 {
-  // height: 910px;
   font-family: $miller-display;
   color: #212529;
 
@@ -31,6 +30,13 @@
     font-size: 15px;
     text-align: left;
     font-family: $merriweather;
+    padding-right: 350px;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 992px) {
+  p {
+    padding-right: 0;
   }
 }
 </style>

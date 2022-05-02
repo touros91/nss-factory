@@ -121,11 +121,21 @@ nav {
       width: 120px;
       margin-left: 120px;
       margin-bottom: 5px;
+      border-radius: none;
 
       &:focus {
         outline: none;
       }
     }
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 992px) {
+  .nav-item {
+    margin: 30px 0;
+  }
+  form {
+    margin: 30px 0;
   }
 }
 </style>

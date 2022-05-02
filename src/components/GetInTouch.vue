@@ -70,6 +70,7 @@ div {
           background: transparent;
           color: $color-white;
           border: 1px solid;
+          outline: none;
           &::placeholder {
             color: $color-white;
           }

@@ -69,8 +69,8 @@
   position: relative;
   .image {
     position: absolute;
-    top: 28%;
-    left: -128%;
+    top: 30%;
+    left: -80%;
 
     img {
       width: 100%;
@@ -127,12 +127,12 @@
 
 .carousel {
   overflow: hidden;
-  width: 600px;
+  width: 500px;
 
   color: $color-white;
   .carousel-item {
     img {
-      height: 600px;
+      height: 500px;
       object-fit: cover;
     }
   }
